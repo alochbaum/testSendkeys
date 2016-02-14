@@ -28,13 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnNotepadSend = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btnNotepadSend
+            // 
+            this.btnNotepadSend.Location = new System.Drawing.Point(12, 12);
+            this.btnNotepadSend.Name = "btnNotepadSend";
+            this.btnNotepadSend.Size = new System.Drawing.Size(171, 23);
+            this.btnNotepadSend.TabIndex = 0;
+            this.btnNotepadSend.Text = "Open Notebad And Send Keys";
+            this.btnNotepadSend.UseVisualStyleBackColor = true;
+            this.btnNotepadSend.Click += new System.EventHandler(this.btnNotepadSend_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(437, 266);
+            this.Controls.Add(this.btnNotepadSend);
             this.Name = "Form1";
             this.Text = "Test Send Keys";
             this.ResumeLayout(false);
@@ -42,6 +54,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnNotepadSend;
     }
 }
 
